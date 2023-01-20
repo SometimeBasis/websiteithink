@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 15px;
+  padding: 10px;
+  background-color: #2a475e;
+}
+header {
+  font-size: x-large;
+  border-style: solid;
+  text-transform: uppercase;
+  font-family: Courier, monospace;
+  font-style: bold;
+  color: whitesmoke;
+  background-color: #1b2838;
+  padding: 150px;
+  text-align: center;
+}
+h2 {
+  color: whitesmoke;
+}
+nav ul {
+  list-style: disc;
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+}
+a {
+  color: whitesmoke;
+}
+nav li {
+  margin-top: -10px;
+  margin-right: 25px;
+  color: #c7d5e0;
+}
+main {
+  margin: 20px 5px;
+  padding: 10px;
+}
+img {
+  width: 500px;
+  height: 300px;
+}
+.posts {
+  font-size: large;
+  color: whitesmoke;
+  border-width: 2px;
+  border-style: solid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  background-color: #1b2838;
+}
+.im1 {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #1b2838;
+  }
+  @media (max-width: 768px){
+    .img1 {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
+footer {
+  opacity: 0.5;
+  background-color: #1b2838;
+  color: #c7d5e0;
+  padding: 10px;
+  text-align: center;
+}
